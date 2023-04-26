@@ -40,7 +40,7 @@ p{
 }
 
 #logo, #menu{
-    line-height: 60px;
+    line-height: 50px;
 }
 
 #menu{
@@ -60,16 +60,21 @@ p{
 }
 
 a:hover{
-    box-shadow: 0 0 5px #798679;
+    box-shadow: 0 0 5px #000000;
 }
 
 /*Index page*/
 /*header image*/
 
-#header-image{   
-    clear: both; 
-    max-width: 100%;
-    height: auto;
+#header-image{  
+    clear: both;
+    background-image: url(../images/2023-04-26\ \(3\).png);
+    width: 100%;
+    height: 45%;
+    overflow: hidden;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
 }
 
 /*What is growing now*/
@@ -85,7 +90,7 @@ a:hover{
 
 #tulip{
     float: left;
-    width: 33%;
+    width: 38%;
     height: 300px;
     padding-top: 20px;
     text-align: end;
@@ -93,14 +98,14 @@ a:hover{
 
 #buds{
     float: right;
-    width: 33%;
+    width: 38%;
     height: 300px;
     padding-top: 20px;
 }
 
 #spring-crocus{
-    float: left;
-    width: 34%;
+    float: center;
+    width: 38%;
     height: 300px;
     padding-top: 20px;
     margin: 0 auto;
@@ -108,7 +113,7 @@ a:hover{
 
 .text-align-image{
     width: 60%;
-    float: left;
+    float: center;
     margin: 0 1%;
 }
 
@@ -116,7 +121,7 @@ a:hover{
     clear: both;
     text-align: center;
     padding: 0 1%;
-    margin-top: 5vh;
+    margin-top: 0vh;
 }
 
 /*About page*/
@@ -173,43 +178,90 @@ a:hover{
 }
 
 /*Contact page*/
-#background-image{
-    clear: both;
-    background-image: url(../images/2023-04-26\ \(3\).png);
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-repeat: none;
-    background-size: cover;
-    background-position: center;
-}
-
-#contact-form{
-    margin-left: 60%;
-    padding: 40px;
-    width: 100%;
-    background-color: #e6e6e6;
-    opacity: 0.75;
-    display: table-caption;
-}
-
-#button{
-    border: none;
-    font-size: 100%;
-}
-
-#button:hover{
-    box-shadow: 0 0 5px #798679;
-}
-
-.title{
-    float: left;
-    display: contents;
-}
-
-#fname, #lname, #email{
-    float: right;
-}
+    #contact-box {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 50px 30px;
+        background: url('../images/2023-04-26\ \(3\).png');
+        background-size: cover;    
+    }
+    
+    .inside-box {
+        max-width: 850px;
+        height: 85vh;
+        background: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 38px;
+    }
+    
+    .form-side {
+        padding: 50px 40px;
+    }
+    
+    .form-side 
+    h2 {
+        padding-top: 2rem;
+        margin-top: -2rem;
+        padding-bottom: 2rem;
+        text-transform: capitalize;
+    }
+    
+    .right-side {
+        height: 85vh;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('../image/contact-me-container-img.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 5rem 3rem;
+        color: #fff;
+        border-radius: 0 38px 38px 0;
+    }
+    
+    .right-side
+    h2 {
+        padding: 2rem 1rem;
+    }
+    
+    .right-side
+    p {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .field {
+        width: 100%;
+        padding: 0.5rem 0;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0);
+        background-color: rgba(230, 230, 230, 0.6);
+        font-size: 1.1rem;
+        margin-bottom: 22px;
+        text-align: center;
+    }
+    
+    .field:focus {
+        background-color: #fff;
+        border: 2px solid rgba(0, 194, 255, 0.4);
+    }
+    
+    .field:hover {
+        background-color: rgba(0, 0, 0, 0.07);
+    }
+    
+    #submit {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        border: none;
+        font-size: 1rem;
+        background: rgba(0, 194, 255, 0.4);
+        cursor: pointer;
+        margin-bottom: 2rem;
+    }
 
 /*404 page*/
 
@@ -233,7 +285,7 @@ footer{
 .social {
     text-align: center;
     color: inherit;
-    background-color: #e6e6e6;
+    background-color: #858585;
     height: fit-content;
 }
 
