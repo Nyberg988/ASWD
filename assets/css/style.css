@@ -20,7 +20,7 @@ html, body{
 
 body{
     font-family: montserrat, sans-serif;
-    color: #808080;
+    color: #000000;
     display: flex; /*sticky footer acknowledgment*/
     flex-direction: column; /*sticky footer acknowledgment*/
 }
@@ -66,11 +66,10 @@ a:hover{
 /*Index page*/
 /*header image*/
 
-#header-image{
-    overflow: hidden;
-    clear: both;
-    padding-top: 5px;
-    height: 400px;
+#header-image{   
+    clear: both; 
+    max-width: 100%;
+    height: auto;
 }
 
 /*What is growing now*/
